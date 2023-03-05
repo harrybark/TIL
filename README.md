@@ -1,6 +1,6 @@
 # Today I Learned
 
-[x] - Algorithm
+- [x] : Algorithm
 <hr>
 
 ### Programmers
