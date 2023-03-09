@@ -1,6 +1,8 @@
 package me.harry.designpatterns.designpatterns.singleton;
 
-public class ThreadSafeSettingsInnerSet {
+import java.io.Serializable;
+
+public class ThreadSafeSettingsInnerSet implements Serializable {
 
     private ThreadSafeSettingsInnerSet() {
     }
@@ -10,5 +12,9 @@ public class ThreadSafeSettingsInnerSet {
     }
     public static ThreadSafeSettingsInnerSet getInstance() {
         return SettingsHolder.INSTANCE;
+    }
+
+    protected Object readResolve() {
+        return getInstance();
     }
 }
