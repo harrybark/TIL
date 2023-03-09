@@ -13,7 +13,7 @@
             <th>index</th>
 	        <th>Date(YYYY.MM.DD)</th>
 	        <th>problem No.</th>
-            <th>Title</th>
+            <th>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
 	        <th>URL</th>
 	        <th>Solution</th>
             <th>Test</th>
@@ -39,7 +39,7 @@
             <th>index</th>
 	        <th>Date(YYYY.MM.DD)</th>
 	        <th>problem No.</th>
-            <th>Title</th>
+            <th>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
 	        <th>URL</th>
 	        <th>Solution</th>
             <th>Test</th>
