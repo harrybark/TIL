@@ -55,6 +55,15 @@
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/baekjoon/Problem2869.java</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/baekjoon/Problem2869Test.java</td>
         </tr>
+        <tr>
+            <td>2</td>
+            <td>2023.03.19</td>
+            <td>1181</td>
+            <td>단어정렬</td>
+            <td>https://www.acmicpc.net/problem/1181</td>
+            <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/baekjoon/WordSorting_1181.java</td>
+            <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/baekjoon/WordSorting_1181Test.java</td>
+        </tr>
     </tbody>
 </table>
 
