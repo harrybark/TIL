@@ -22,7 +22,7 @@
             <td>2023.04.01</td>
             <td>2869</td>
             <td>호텔대실</td>
-            <td>https://www.acmicpc.net/problem/2869/</td>
+            <td>https://school.programmers.co.kr/learn/courses/30/lessons/155651</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/programmers/HotelBook.java</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/programmers/HotelBookTest.java</td>
         </tr>
@@ -31,7 +31,7 @@
             <td>2023.04.01</td>
             <td></td>
             <td>바탕화면 정리</td>
-            <td>https://www.acmicpc.net/problem/1181</td>
+            <td>https://school.programmers.co.kr/learn/courses/30/lessons/161990</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/programmers/DeskTopCleanUp.java</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/programmers/DeskTopCleanUpTest.java</td>
         </tr>
