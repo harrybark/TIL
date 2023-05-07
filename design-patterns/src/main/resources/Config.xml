@@ -9,4 +9,6 @@
 
     <bean id="whiteship" class="me.harry.designpatterns.designpatterns.factory.usage.SpringBeanFactoryExample" />
 
+    <bean id="whiteship-abstract" class="me.harry.designpatterns.designpatterns.abstract_factory.usage.ShipFactory" />
+
 </beans>
