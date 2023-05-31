@@ -35,6 +35,15 @@
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/programmers/DeskTopCleanUp.java</td>
             <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/programmers/DeskTopCleanUpTest.java</td>
         </tr>
+        <tr>
+            <td>3</td>
+            <td>2023.05.31</td>
+            <td></td>
+            <td>추억점수</td>
+            <td>https://school.programmers.co.kr/learn/courses/30/lessons/176963</td>
+            <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/main/java/com/example/algorithm/programmers/MemoryScore.java</td>
+            <td>https://github.com/harrybark/TIL/blob/main/algorithm/src/test/java/com/example/algorithm/programmers/MemoryScoreTest.java</td>
+        </tr>
     </tbody>
 </table>
 
