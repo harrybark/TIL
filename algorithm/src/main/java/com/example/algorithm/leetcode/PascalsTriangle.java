@@ -32,16 +32,4 @@ public class PascalsTriangle {
         }
         return answer;
     }
-
-    public static void main(String[] args) {
-        PascalsTriangle pascalsTriangle = new PascalsTriangle();
-        List<List<Integer>> generate = pascalsTriangle.generate(5);
-
-        for(List<Integer> outer : generate) {
-            for(int inner : outer) {
-                System.out.print(inner);
-            }
-            System.out.println();
-        }
-    }
 }
