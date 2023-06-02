@@ -24,7 +24,6 @@ public class BOJ15651 {
     }
 
     static void rec_func(int k) {
-        System.out.println(k);
         if ( k == M + 1 ) {
             for ( int i = 1 ; i <= M ; i += 1 ) {
                 sb.append(selected[i]).append(" ");
