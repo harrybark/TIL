@@ -1,6 +1,7 @@
 package com.example.algorithm.baekjoon;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /***
@@ -32,6 +33,7 @@ public class BOJ15651 {
         } else {
             for ( int cand = 1 ; cand <= N ; cand += 1 ) {
                 selected[k] = cand;
+                System.out.println("k : " + k + " // " + Arrays.toString(selected));
                 rec_func(k + 1);
                 selected[k] = 0;
             }
@@ -42,7 +44,7 @@ public class BOJ15651 {
         input();
 
         rec_func(1);
-        //System.out.println(sb.toString());
+        System.out.println(sb.toString());
     }
     public static class FastReader {
         BufferedReader br;
