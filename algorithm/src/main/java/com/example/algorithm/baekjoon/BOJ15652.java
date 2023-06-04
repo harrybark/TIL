@@ -6,19 +6,18 @@ import java.util.StringTokenizer;
 
 /***
  * @Author : 갈색토마토
- * @Date   : 2023.06.02 (Fri)
- * @Description : BAEKJOON No.15651
- * @URL         : https://www.acmicpc.net/problem/15651
+ * @Date   : 2023.06.04 (Sun)
+ * @Description : BAEKJOON No.15652
+ * @URL         : https://www.acmicpc.net/problem/15652
  */
-
-public class BOJ15651 {
+public class BOJ15652 {
 
     static int M, N ;
     static int[] selected;
     static StringBuilder sb = new StringBuilder();
 
     static void input() {
-        FastReader scan = new FastReader();
+        BOJ15651.FastReader scan = new BOJ15651.FastReader();
         N = scan.nextInt();
         M = scan.nextInt();
         selected = new int[M + 1];
@@ -31,7 +30,9 @@ public class BOJ15651 {
             }
             sb.append("\n");
         } else {
-            for ( int cand = 1 ; cand <= N ; cand += 1 ) {
+            int start = selected[k-1];
+            if ( start == 0) start = 1;
+            for ( int cand = start ; cand <= N ; cand += 1 ) {
                 selected[k] = cand;
                 rec_func(k + 1);
                 selected[k] = 0;

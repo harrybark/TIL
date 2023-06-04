@@ -6,35 +6,40 @@ import java.util.StringTokenizer;
 
 /***
  * @Author : 갈색토마토
- * @Date   : 2023.06.02 (Fri)
- * @Description : BAEKJOON No.15651
- * @URL         : https://www.acmicpc.net/problem/15651
+ * @Date   : 2023.06.04 (Sun)
+ * @Description : BAEKJOON No.15649
+ * @URL         : https://www.acmicpc.net/problem/15649
  */
-
-public class BOJ15651 {
+public class BOJ15649 {
 
     static int M, N ;
-    static int[] selected;
+    static int[] selected, used;
     static StringBuilder sb = new StringBuilder();
 
     static void input() {
-        FastReader scan = new FastReader();
+        BOJ15651.FastReader scan = new BOJ15651.FastReader();
         N = scan.nextInt();
         M = scan.nextInt();
         selected = new int[M + 1];
+        used     = new int[N + 1];
     }
 
     static void rec_func(int k) {
-        if ( k == M + 1 ) {
-            for ( int i = 1 ; i <= M ; i += 1 ) {
+        if (k == M + 1) {
+            for (int i = 1; i <= M; i += 1) {
                 sb.append(selected[i]).append(" ");
             }
             sb.append("\n");
         } else {
-            for ( int cand = 1 ; cand <= N ; cand += 1 ) {
+            for (int cand = 1; cand <= N; cand += 1) {
+                if (used[cand] == 1) {
+                    continue;
+                }
                 selected[k] = cand;
+                used[cand] = 1;
                 rec_func(k + 1);
                 selected[k] = 0;
+                used[cand] = 0;
             }
         }
     }
@@ -45,6 +50,7 @@ public class BOJ15651 {
         rec_func(1);
         System.out.println(sb.toString());
     }
+
     public static class FastReader {
         BufferedReader br;
         StringTokenizer st;
