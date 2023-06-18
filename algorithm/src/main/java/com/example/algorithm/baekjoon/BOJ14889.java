@@ -21,11 +21,11 @@ public class BOJ14889 {
 
     static void input() {
         N = scan.nextInt();
-        nums = new int[N+1][N+1];
-        used = new int[N+1];
+        nums = new int[N][N];
+        used = new int[N];
 
-        for ( int i = 1 ; i <= N ; i += 1 ) {
-            for ( int j = 1 ; j <= N ; j += 1 ) {
+        for ( int i = 0 ; i < N ; i += 1 ) {
+            for ( int j = 0 ; j < N ; j += 1 ) {
                 nums[i][j] = scan.nextInt();
             }
         }
@@ -37,11 +37,25 @@ public class BOJ14889 {
         int team_start = 0;
         int team_link  = 0;
 
-
+        for (int i = 0; i < N - 1 ; i++) {
+            for (int j = i + 1; j < N ; j++) {
+                // i 번째 사람과 j 번째 사람이 true라면 스타트팀으로 점수 플러스
+                if (used[i] == 1 && used[j] == 1) {
+                    team_start += nums[i][j];
+                    team_start += nums[j][i];
+                }
+                // i 번째 사람과 j 번째 사람이 false라면 링크팀으로 점수 플러스
+                else if (used[i] == 0 && used[j] == 0) {
+                    team_link += nums[i][j];
+                    team_link += nums[j][i];
+                }
+            }
+        }
 
         int value = Math.abs(team_link - team_start);
         if( value == 0 ) {
             MIN = value;
+            System.out.println(MIN);
             System.exit(0);
         }
 
@@ -52,12 +66,13 @@ public class BOJ14889 {
         if ( K == N / 2 ) {
             diff();
         } else {
-            for ( int cand = idx ; cand <= N ; cand += 1 ) {
-                if ( used[cand] == 1 ) continue;
+            for ( int cand = idx ; cand < N ; cand += 1 ) {
+                if ( used[cand] != 1 )  {
+                    used[cand] = 1;
+                    dfs(K + 1, idx + 1);
+                    used[cand] = 0;
+                }
 
-                used[cand] = 1;
-                dfs(K + 1, idx + 1);
-                used[cand] = 0;
             }
         }
     }
@@ -65,9 +80,9 @@ public class BOJ14889 {
     public static void main(String[] args) {
         input();
 
-        dfs(1, 1);
+        dfs(0, 0);
 
-        Utils.print2Array(nums, 1);
+        System.out.println(MIN);
     }
 
 }
