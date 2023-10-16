@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- vue 관련 script -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- vue router CDN-->
+    <script src="https://unpkg.com/vue-router@3/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     
+    <div id="app">
+        <p v-bind:id="uuid">{{ num }}</p>
+        <p v-bind:class="cName">{{ doubleNum }}</p>
+    </div>
+
+    <script>
+
+        var vm = new Vue({
+            el: '#app',
+            data : {
+                num : 10,
+                uuid : 'abc1234',
+                cName : 'text-blue'
+            },
+            computed: {
+                doubleNum : function() {
+                    return (this.num * 2);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
